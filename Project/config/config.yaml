@@ -1,0 +1,11 @@
+data_ingestion:
+  source:data/raw/spotify-tracks-dataset.csv
+
+data_validation:
+  schema_file_path: config/schema.yaml
+
+model_trainer:
+  model_type: RandomForest
+
+model_pusher:
+  export_dir: models/
